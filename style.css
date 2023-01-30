@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7e9f2;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 150px 3fr 2fr 1fr;
+    grid-template-areas: 
+        "icon slg list list"
+        "img img img img"
+        "info info text text"
+        "footer footer footer footer";
+}
+
+.icon{
+    grid-area: icon;
+    background-color: #b92074;   
+}
+.slg{
+    grid-area: slg;
+    background-color: #6d0f43; 
+}
+.list{
+    grid-area: list;
+    background-color: #811c54; 
+}
+
+.image{    
+    grid-area: img;
+    background-color: #f75ab0; 
+}
+.info{
+    grid-area: info;
+    background-color: #af7394; 
+}
+.text{
+    grid-area: text;
+    background-color: #f086c0; 
+}
+.footer{
+    grid-area: footer;
+    background-color: #eea7ce; 
+}
+
+#Cabecera{
+    color:black;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    font-family:'Ubuntu', sans-serif;
+    align-items: center;
+    list-style-type: none;
+}
+
+.Logo{
+    width: 200px;       
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Slogan{
+   
+}
+.Menú{
+    text-decoration: none;
+}
+
+/* Listas */    
+nav ul li{
+    text-align: center; 
+    list-style-type: none;
+    display: inline-block;
+    }
+
+nav ul li a{
+    color: rgb(233, 90, 197);
+    font-size: 22px;
+    font-weight: 25px;
+    text-decoration: none;
+
+    
+    }
+
+
+nav ul li a:hover{
+    color:rgb(248, 160, 194);
+
+        
+    }
+
+.Foto{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    }
+
+h1 a{
+    color:rgb(236, 63, 193);
+    font-size: 30px;
+    font-weight: 30px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;        
+    }
+
+h2 {
+        color:rgb(236, 63, 193);
+        font-size: 30px;
+        font-weight: 30px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;        
+    }
+
+h3 {
+    color:#161516;
+    font-size: 20px;
+    font-weight: 20px;
+    font-family:'Ubuntu', sans-serif; 
+    text-align: center;
+    }
+
+p1{
+    color:#811c54;
+    font-size: 20px;
+    font-weight: 20px;
+        
+    }
+    
+p2{
+    color:#631540;
+    font-size: 20px;
+    font-weight: 20px;
+    font-family:'Ubuntu', sans-serif;
+    display: flex;
+    text-decoration: none;
+    
+    }
+
+p3{
+    color:#0a0a0a;
+    font-size: 20px;
+    font-weight: 20px;
+    font-family:'Ubuntu', sans-serif;
+    display: flex;
+    text-align: center;
+    
+}
+
+#gallery {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    width: calc(33.33% - 10px);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    color:#d43cbb;
+    font-size: 30px;
+    font-weight: 30px;
+    font-family:'Ubuntu', sans-serif;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    border: 3px solid rgb(17, 17, 17);
+  }
+
+
+  input[type="submit"] {
+    width: 20%;
+    height: 10vh;
+    padding: 10px;
+    background-color: #4caf8e;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+
+
+/*Listas de productos*/
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:#d43cbb;
+    font-size: 30px;
+    font-weight: 30px;
+    font-family:'Ubuntu', sans-serif;
+  }
+  
+  .product {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .nombre {
+    font-weight: bold;
+    color: rgb(202, 51, 190);
+  }
+
+
+.Ubicación{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+}
+
+.Texto{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end; 
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+    input[type="text"], input[type="email"], textarea{
+    width: 50px;
+    height: 2px;
+    margin: 10px 0;
+    text-align: center;
+    }
+}
+
+#video{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+}
+
+}
+
+.footer p2{
+    color: #631540;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+}
